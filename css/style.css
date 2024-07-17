@@ -1790,7 +1790,13 @@ margin-top: 90px;
  
 /** slider arrow **/
  
-
+/** CalculatorBtn**/
+.CalculatorBtn{
+    background-color: transparent;
+    color: white;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 
