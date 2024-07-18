@@ -7,7 +7,8 @@
     <title>Daily Sales Calculator </title>
 </head>
 <body>
-
+  <button id="addRowButton">Add Row</button>
+  <button id="refreshButton">Refresh Page</button>
     <table>
         <thead>
             <tr>
@@ -19,21 +20,6 @@
 
         <tbody>
             <tr>
-                <td><input type="text" onkeyup="quantityfunc(this)"></td>
-                <td><input type="text" onkeyup="pricefunc(this)"></td>
-                <td class="netPrize">0</td>
-              </tr>
-              <tr>
-                <td><input type="text" onkeyup="quantityfunc(this)"></td>
-                <td><input type="text" onkeyup="pricefunc(this)"></td>
-                <td class="netPrize">0</td>
-              </tr>
-              <tr>
-                <td><input type="text" onkeyup="quantityfunc(this)"></td>
-                <td><input type="text" onkeyup="pricefunc(this)"></td>
-                <td class="netPrize">0</td>
-              </tr>
-              <tr>
                 <td><input type="text" onkeyup="quantityfunc(this)"></td>
                 <td><input type="text" onkeyup="pricefunc(this)"></td>
                 <td class="netPrize">0</td>
@@ -57,31 +43,6 @@
         
       </table>
 
-      <script>
-        var total = document.getElementById("total");
-        var netPrize = document.getElementsByClassName("netPrize");
-        function totalResult(){
-          var cal = 0;
-            for (let i = 0; i < netPrize.length; i++) {
-              cal += parseInt(netPrize[i].innerText)
-              
-            }
-            total.innerHTML= cal;
-        }
-        function quantityfunc(q) {
-            var priceValue = q.parentElement.parentElement.children[1].children[0].value;
-            q.parentElement.parentElement.children[2].innerHTML = q.value * priceValue;
-            totalResult()
-        }
-
-        function pricefunc(p) {
-           var quantityValue = p.parentElement.parentElement.children[0].children[0].value;
-           p.parentElement.parentElement.children[2].innerHTML = p.value * quantityValue;
-           totalResult()
-        }
-
-
-        
-      </script>
+ <script src="script.js"></script>
 </body>
 </html>
