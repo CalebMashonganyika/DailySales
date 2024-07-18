@@ -13,3 +13,43 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+  /** Testing**/
+  table {
+    border: 1px solid #999;
+    border-collapse: collapse;
+    width: 100%
+  }
+  td {
+    border: 1px solid #999
+  }
+  
+  @media only screen and (max-width: 768px) {
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      color: #11d3f5;
+      font-weight: bold;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 10px;
+      font-size: 30px;
+      
+     
+    }
+    input {
+      height: 30px;
+      width: 100%;
+      border-radius: 5%;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #98e9ce;
+    }
+  }

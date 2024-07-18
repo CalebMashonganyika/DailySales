@@ -7,6 +7,7 @@
     <title>Daily Sales Calculator </title>
 </head>
 <body>
+
     <table>
         <thead>
             <tr>
@@ -18,6 +19,21 @@
 
         <tbody>
             <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)"></td>
+                <td><input type="text" onkeyup="pricefunc(this)"></td>
+                <td class="netPrize">0</td>
+              </tr>
+              <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)"></td>
+                <td><input type="text" onkeyup="pricefunc(this)"></td>
+                <td class="netPrize">0</td>
+              </tr>
+              <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)"></td>
+                <td><input type="text" onkeyup="pricefunc(this)"></td>
+                <td class="netPrize">0</td>
+              </tr>
+              <tr>
                 <td><input type="text" onkeyup="quantityfunc(this)"></td>
                 <td><input type="text" onkeyup="pricefunc(this)"></td>
                 <td class="netPrize">0</td>
@@ -63,6 +79,8 @@
            p.parentElement.parentElement.children[2].innerHTML = p.value * quantityValue;
            totalResult()
         }
+
+
         
       </script>
 </body>
