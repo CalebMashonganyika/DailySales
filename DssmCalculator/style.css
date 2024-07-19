@@ -39,11 +39,14 @@ table {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  
 }
 
 #addRowButton:hover {
   background-color: #45a049;
 }
+
+
 
 /* style.css */
 #refreshButton {
@@ -60,6 +63,54 @@ table {
 #refreshButton:hover {
   background-color: #005689;
 }
+
+/* style.css */
+#addRowButton,
+#refreshButton {
+    position: fixed;
+    bottom: 20px;
+    background-color: #d96900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#addRowButton {
+    left: 20px;
+}
+
+#refreshButton {
+    left: 150px; /* Adjust the spacing as needed */
+}
+
+#addRowButton:hover,
+#refreshButton:hover {
+    background-color: #005689;
+}
+
+/* style.css */
+#clearButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF5733; /* Red */
+  color: #FFFF99; /* Yellow */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#clearButton:hover {
+  background-color: #E64D00; /* Darker red on hover */
+}
+
 
   
   @media only screen and (max-width: 768px) {
