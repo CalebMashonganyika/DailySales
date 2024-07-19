@@ -54,13 +54,6 @@ addRowButton.addEventListener("click", () => {
     saveUserInput();
 });
 
-// Assuming you have a button with an ID "refreshButton" to trigger page refresh
-const refreshButton = document.getElementById("refreshButton");
-
-refreshButton.addEventListener("click", () => {
-    location.reload();
-});
-
 // Clear button functionality
 const clearButton = document.getElementById("clearButton");
 

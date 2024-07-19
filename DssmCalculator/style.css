@@ -1,11 +1,39 @@
 body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
   background-color: teal;
 }
+
+header {
+  position: fixed;
+  background-color: rgb(107, 17, 107);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Ensure it's above other content */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     background-color: teal;
+    position: relative;
+    top: 80px;
   }
   
   td, th {
@@ -19,6 +47,7 @@ table {
     background-color: #dddddd;
   }
 
+  
   /** Testing**/
   table {
     border: 1px solid #999;
@@ -39,7 +68,7 @@ table {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  
+  z-index: 1;
 }
 
 #addRowButton:hover {
@@ -47,28 +76,10 @@ table {
 }
 
 
-
 /* style.css */
-#refreshButton {
-  background-color: #0074D9;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#refreshButton:hover {
-  background-color: #005689;
-}
-
-/* style.css */
-#addRowButton,
-#refreshButton {
+#addRowButton {
     position: fixed;
-    bottom: 20px;
+    top: 70px;
     background-color: #d96900;
     color: white;
     border: none;
@@ -77,25 +88,22 @@ table {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    z-index: 1;
 }
 
 #addRowButton {
-    left: 20px;
+    left: 10px;
 }
 
-#refreshButton {
-    left: 150px; /* Adjust the spacing as needed */
-}
 
-#addRowButton:hover,
-#refreshButton:hover {
+#addRowButton:hover{
     background-color: #005689;
 }
 
 /* style.css */
 #clearButton {
   position: fixed;
-  bottom: 20px;
+  top: 70px;
   right: 20px;
   background-color: #FF5733; /* Red */
   color: #FFFF99; /* Yellow */
@@ -105,11 +113,14 @@ table {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  z-index: 1;
 }
 
 #clearButton:hover {
   background-color: #E64D00; /* Darker red on hover */
 }
+
+
 
 
   
