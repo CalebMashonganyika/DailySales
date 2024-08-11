@@ -24,18 +24,27 @@
     </table>
     <div class="button-container">
         <div>
-            <button id="addRow">Add Row</button>
-            <button id="addColumn">Add Column</button>
+            <button id="addRow">+R</button>
+            <button id="addColumn">+C</button>
         </div>
         <div>
-            <button id="removeRow">Remove Row</button>
-            <button id="removeColumn">Remove Column</button>
+            <button id="removeRow">-R</button>
+            <button id="removeColumn">-C</button>
+        </div>
+        <div>
+            <input type="number" id="columnIndex" placeholder="Column Index">
+            <button id="deleteColumn">Delete Column</button>
+            <button id="addColumnAt">Add Column At</button>
+        </div>
+        <div>
+            <input type="number" id="numRows" placeholder="Number of Rows">
+            <input type="number" id="numCols" placeholder="Number of Columns">
+            <button id="createTable">Create Table</button>
         </div>
         <button id="downloadCSV">Download as CSV</button>
+        <button id="downloadImage">Download as Image</button>
     </div>
-    
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

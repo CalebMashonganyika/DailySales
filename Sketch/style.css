@@ -22,6 +22,11 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
 /* Buttons styling */
 button {
     background-color: #007bff;
